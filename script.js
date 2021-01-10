@@ -24,8 +24,8 @@ function fetchCharacters() {
                 console.log(data.name);
             document
             .getElementById('characters')
-            .insertAdjacentHTML("afterbegin", `<img src="characters/${data.name}/icon.jpg">
-            <br><h4>${data.name}</h4><p>Rarity: ${data.rarity}<br>Vision: ${data.vision}<br>Weapon: ${data.weapon}<br><br>
+            .insertAdjacentHTML("afterbegin", `<br><img src="characters/${data.name}/icon.jpg">
+            <br><br><h4>${data.name}</h4><p>Rarity: ${data.rarity}<br>Vision: ${data.vision}<br>Weapon: ${data.weapon}<br><br>
             Character Description:<br>${data.description}</p>
 
             <h5>Passive Talents</h5>
@@ -138,8 +138,8 @@ function fetchArtifacts() {
             document
             .getElementById('artifacts')
             .insertAdjacentHTML("afterbegin", `
-            <img src="artifacts/${data.name}/flower-of-life">
-            <br><h5>${data.name}</h5>
+            <br><img src="artifacts/${data.name}/flower-of-life">
+            <br><br><h4>${data.name}</h4>
             <p>Max Rarity: ${data.max_rarity}<br>
             2 Piece Bonus: ${data["2-piece_bonus"]}<br>
             4 Piece Bonus: ${data["4-piece_bonus"]}<br><br></p>`);
@@ -178,8 +178,8 @@ function fetchWeapons() {
             document
             .getElementById('weapons')
             .insertAdjacentHTML("afterbegin", `
-            <img src="weapons/${data.name}/icon">
-            <h5>Name: ${data.name}</h5>
+            <br><img src="weapons/${data.name}/icon"><br><br>
+            <h4>${data.name}</h4>
             <p>Rarity: ${data.rarity}<br>
             Location: ${data.location}<br>
             Type: ${data.type}<br>
